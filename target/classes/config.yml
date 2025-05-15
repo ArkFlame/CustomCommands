@@ -1,0 +1,68 @@
+# CustomCommands Configuration
+# 
+# Commands configuration:
+# Each command has the following properties:
+#   - messages: List of messages to send to players (supports color codes and placeholders)
+#   - console-messages: List of messages to send to console (if empty, will use messages)
+#   - player-commands: List of commands to execute as the player
+#   - console-commands: List of commands to execute as the console
+#   - use-permission: Whether to check for permission
+#   - permission: Permission node to check
+#   - permission-message: Message to send if the player doesn't have permission
+#
+# Available placeholders:
+#   - %player% - Player name
+#   - %displayname% - Player display name
+#   - %world% - Player's world name
+#   - %server% - Server address (mc.arkflame.com)
+#   - %website% - Website address (www.arkflame.com)
+#   - PlaceholderAPI placeholders (if installed)
+
+commands:
+  store:
+    messages:
+      - "&8&l»&r &6Visit our store at: &e&nhttps://www.arkflame.com/store"
+    console-messages:
+      - "Store link: https://www.arkflame.com/store"
+    player-commands: []
+    console-commands: []
+    use-permission: false
+    permission: "customcommands.store"
+    permission-message: "&cYou don't have permission to use this command."
+  
+  map:
+    messages:
+      - "&8&l»&r &6View our server map at: &e&nhttps://www.arkflame.com/map"
+    console-messages:
+      - "Map link: https://www.arkflame.com/map"
+    player-commands: []
+    console-commands: []
+    use-permission: false
+    permission: "customcommands.map"
+    permission-message: "&cYou don't have permission to use this command."
+  
+  discord:
+    messages:
+      - "&8&l»&r &6Join our Discord server at: &e&nhttps://discord.arkflame.com"
+    console-messages:
+      - "Discord link: https://discord.arkflame.com"
+    player-commands: []
+    console-commands: []
+    use-permission: false
+    permission: "customcommands.discord"
+    permission-message: "&cYou don't have permission to use this command."
+    
+  # Example command with multiple messages and commands
+  # example:
+  #   messages:
+  #     - "&8&l»&r &aThis is an example command for %player%"
+  #     - "&8&l»&r &aYou are currently in %world%"
+  #   console-messages:
+  #     - "A player used the example command"
+  #   player-commands:
+  #     - "me used the example command"
+  #   console-commands:
+  #     - "broadcast %player% used the example command"
+  #   use-permission: true
+  #   permission: "customcommands.example"
+  #   permission-message: "&cYou don't have permission to use this command."

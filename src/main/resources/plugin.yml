@@ -1,0 +1,21 @@
+name: CustomCommands
+version: 1.0
+main: com.arkflame.customcommands.CustomCommands
+api-version: 1.8
+authors: [ArkFlame]
+description: Configurable custom commands with PlaceholderAPI support
+softdepend: [PlaceholderAPI]
+
+commands:
+  store:
+    description: Shows a link to the store
+    usage: /store
+    aliases: [shop]
+  map:
+    description: Shows a link to the server map
+    usage: /map
+    aliases: [dynmap, servermap]
+  discord:
+    description: Shows a link to the Discord server
+    usage: /discord
+    aliases: [disc]
